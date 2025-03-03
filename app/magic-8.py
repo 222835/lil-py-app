@@ -6,6 +6,9 @@ class MyWidget(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 
+        self.setWindowTitle("Magic 8 Ball")
+        self.setWindowIcon(QtGui.QIcon('icon.png'))
+
         self.magic8ball = ["Yes, definetly", "No!!", "Perchance...", "Ask me later", "idk", "OMG YES", "mmmm i would think abt it"]
 
         self.button = QtWidgets.QPushButton("New answer")
